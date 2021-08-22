@@ -7,10 +7,11 @@ img {
     height: 20em;
 }
 
-table{
+table, th, td{
     border:solid;
     width: 50%;
     text-align: center;
+    border-collapse: collapse;
 }
 
 th, td {
