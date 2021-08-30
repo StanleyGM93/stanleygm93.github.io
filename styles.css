@@ -1,19 +1,48 @@
+
 h1 {
-    color: red;
+    color: rgba(252, 245, 245, 0.849);
     text-align: center;
+    background-color: rgb(23, 65, 65);
+    padding: 20px;
+    font-size:50px;
+
 }
 
 img {
     height: 20em;
 }
 
-table, th, td{
+
+table,
+ 
+th, 
+
+td{
     border:solid;
     width: 50%;
     text-align: center;
     border-collapse: collapse;
 }
 
-th, td {
+
+th, 
+td {
     padding: 15px;
 }
+
+
+/* 
+4,3,2,1
+1 = general selector
+2 = element selector
+3 = class selector
+4 = id selector
+
+General selector = "*" 
+
+Element selector  
+Multiple element selectors 
+Child selector 
+Descendant selector 
+Class selector 
+*/
