@@ -2,27 +2,36 @@
 <html lang="en-NZ">
 
 <head>
-    <title>{{ page.title }}</title>
+  <title>{{ page.title }}</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="Stanley Mair is a student web developer. This webpage details his journey in improving his knowledge and skills in this discipline.">
-    <link href="./styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Stanley Mair is a student web developer. This webpage details his journey in improving his knowledge and skills in this discipline.">
+  <link href="/styles.css" rel="stylesheet">
 </head>
 
 <body>
 
+  <header>
+    <h1>{{ page.heading }}</h1>
+  </header>
+  <main>
+
     <header>
-        <h1>Stan's Home on the Web</h1>
+      <p>Please feel free to navigate through my website below.</p>
     </header>
 
+    {% include mainnav.html %}
+    
     {{ content }}
 
-      <footer>
-        <p>Developed by Stanley Mair. Contact me at <a
-                href="mailto:stanleygmair@gmail.com?subject=Website contact">stanleygmair@gmail.com</a></p>
-    </footer>
+  </main>
+
+  <footer>
+    <p>Developed by Stanley Mair. Contact me at <a
+        href="mailto:stanleygmair@gmail.com?subject=Website contact">stanleygmair@gmail.com</a></p>
+  </footer>
 
 </body>
 
