@@ -1,10 +1,6 @@
 # My personal site
 https://stanleygm93.github.io/
 
-## Notes
-
-- Use relative links for everything
-
 # Set up Jekyll Steps
 
 1. Ensure Ruby 3+ is installed
