@@ -2,50 +2,50 @@
 <html lang="en-NZ">
 
 <head>
-    <title>Stan's blog</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../styles.css" rel="stylesheet">
+  <title>Stan's blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/styles.css" rel="stylesheet">
 </head>
 
 <body>
 
+  <header>
+    <h1>Progress Blog</h1>
+  </header>
+
+  <main>
+
     <header>
-        <h1>Progress Blog</h1>
+      <p>Please feel free to navigate through my website below.</p>
     </header>
 
-    <main>
+    {% include mainnav.html %}
 
-        <header>
-            <p>Please feel free to navigate through my website below.</p>
-        </header>
+    {% include blognav.html %}
 
-        {% include mainnav.html %}
+    {{ content }}
 
-        {% include blognav.html %}
+    <aside>
 
-        {{ content }}
+      <header>
+        <h3>Useful Links</h3>
+      </header>
+      <ul>
+        <li><a href="http://html5doctor.com/">HTML5 Doctor</a></li>
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/">Morzilla develop network</a></li>
+        <li><a href="https://validator.w3.org/">W3 Validator</a></li>
+        <li><a href="https://www.a11yproject.com/">A11Y Project</a></li>
+      </ul>
+    </aside>
 
-        <aside>
+  </main>
 
-            <header>
-                <h3>Useful Links</h3>
-            </header>
-            <ul>
-                <li><a href="http://html5doctor.com/">HTML5 Doctor</a></li>
-                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/">Morzilla develop network</a></li>
-                <li><a href="https://validator.w3.org/">W3 Validator</a></li>
-                <li><a href="https://www.a11yproject.com/">A11Y Project</a></li>
-            </ul>
-        </aside>
 
-    </main>
-
-  
-    <footer>
-        <p>Developed by Stanley Mair. Contact me at stanleygmair@gmail.com</p>
-    </footer>
+  <footer>
+    <p>Developed by Stanley Mair. Contact me at stanleygmair@gmail.com</p>
+  </footer>
 </body>
 
 </html>

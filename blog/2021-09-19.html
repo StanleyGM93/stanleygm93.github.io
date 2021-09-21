@@ -1,127 +1,33 @@
-<!DOCTYPE html>
-<html lang="en-NZ">
+---
+layout: blogdefault
+title: Stan's Blog
+heading: Progress Blog
+---
 
-<head>
-    <title>Stan's blog</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../styles.css" rel="stylesheet">
-</head>
+<article>
 
-<body>
-
-    <header>
-        <h1>Progress Blog</h1>
-    </header>
-
-    <main>
-
-        <header>
-            <p>Please feel free to navigate through my website below.</p>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="../">Home page</a></li>
-                <li><a href="../achievements.html">My biggest achievements</a></li>
-                <li><a href="../crypto_table.html">Cryptocurrency table</a></li>
-                <li><a href="../charity_plug.html">Charity plug</a></li>
-                <li><a href="./"><strong>Blog</strong></a></li>
-            </ul>
-        </nav>
-
-        <h3>Links to my blog posts</h3>
-        <nav>
-            <ol>
-                <li>
-                    <a href="./2021-08-07.html">
-                        <time datetime="2021-08-03">
-                            3
-                            <sup>
-                                rd
-                            </sup>
-                            of August 2021
-                        </time>
-                    </a>
-                </li>
-                <li>
-                    <a href="./2021-08-07.html">
-                        <time datetime="2021-08-07">
-                            7
-                            <sup>
-                                th
-                            </sup>
-                            of August 2021
-                        </time>
-                    </a>
-                </li>
-                <li>
-                    <a href="./2021-08-13.html">
-                        <time datetime="2021-08-13">
-                            13
-                            <sup>
-                                th
-                            </sup>
-                            of August 2021
-                        </time>
-                    </a>
-                </li>
-                <li>
-                    <a href="./2021-08-26.html">
-                        <time datetime="2021-08-26">
-                            26
-                            <sup>
-                                th
-                            </sup>
-                            of August 2021
-                        </time>
-                    </a>
-                </li>
-                <li>
-                    <a href="./2021-09-03.html">
-                        <time datetime="2021-09-03">
-                            3
-                            <sup>
-                                rd
-                            </sup>
-                            of September 2021
-                        </time>
-                    </a>
-                </li>
-                <li>
-                    <strong>
-                        <time datetime="2021-09-19">
-                            19
-                            <sup>
-                                th
-                            </sup>
-                            of September 2021
-                        </time>
-                    </strong>
-                </li>
-            </ol>
-        </nav>
+  <header>
+    <h3><time datetime="2021-09-19">19<sup>th</sup> of September 2021</time></h3>
+  </header>
 
 
-        <article>
+  <p>
+    I've begun a UI coding challenge to try and improve my HTML and CSS skills. CSS fundamentals are getting difficult
+    but it's enjoyable to play around
+    with different settings to see how things interact. CSS feels like a jigsaw puzzle, in that you have a design you
+    are trying to copy and you write
+    code to see how you can fit all the pieces together nicely to build the design.
+  </p>
 
-            <header>
-                <h3><time datetime="2021-09-19">19<sup>th</sup> of September 2021</time></h3>
-            </header>
-
-
-            <p>
-               I've begun a UI coding challenge to try and improve my HTML and CSS skills. CSS fundamentals are getting difficult but it's enjoyable to play around
-               with different settings to see how things interact. CSS feels like a jigsaw puzzle, in that you have a design you are trying to copy and you write
-               code to see how you can fit all the pieces together nicely to build the design. 
-            </p>
-
-            <p> 
-                I was informed of another interesting organisation that specialises in CSS and making all websites accessable to all. Often certain headings need to be added in HTML 
-                for the website to make sense to a screen reader. These are often marked up as <pre><code>display:none;</code></pre> in CSS which means that they are not recognised 
-                by the screen reader. The A11y (accessability) project is all about allowing anyone to have access to the web. They suggest using the following code to change certain
-                elements so that they aren't seen by the average user but are recognised by the screen reader:
-                <pre><code>.visually-hidden {
+  <p>
+    I was informed of another interesting organisation that specialises in CSS and making all websites accessable to
+    all. Often certain headings need to be added in HTML
+    for the website to make sense to a screen reader. These are often marked up as
+  <pre><code>display:none;</code></pre> in CSS which means that they are not recognised
+  by the screen reader. The A11y (accessability) project is all about allowing anyone to have access to the web. They
+  suggest using the following code to change certain
+  elements so that they aren't seen by the average user but are recognised by the screen reader:
+  <pre><code>.visually-hidden {
                     clip: rect(0 0 0 0);
                     clip-path: inset(50%);
                     height: 1px;
@@ -130,33 +36,9 @@
                     white-space: nowrap;
                     width: 1px;
                   }</code></pre>
-                  A link to their website is in the useful links section.
-            </p>
+  A link to their website is in the useful links section.
+  </p>
 
-           
 
-        </article>
 
-        <aside>
-
-            <header>
-                <h3>Useful Links</h3>
-            </header>
-            <ul>
-                <li><a href="http://html5doctor.com/">HTML5 Doctor</a></li>
-                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/">Morzilla develop network</a></li>
-                <li><a href="https://validator.w3.org/">W3 Validator</a></li>
-                <li><a href="https://www.a11yproject.com/">A11Y Project</a></li>
-            </ul>
-        </aside>
-
-    </main>
-
- 
-    <footer>
-        <p>Developed by Stanley Mair. Contact me at stanleygmair@gmail.com</p>
-    </footer>
-</body>
-
-</html>
+</article>
