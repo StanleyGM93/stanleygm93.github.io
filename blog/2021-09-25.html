@@ -26,7 +26,7 @@
                 <li><a href="../achievements.html">My biggest achievements</a></li>
                 <li><a href="../crypto_table.html">Cryptocurrency table</a></li>
                 <li><a href="../charity_plug.html">Charity plug</a></li>
-                <li><strong>Blog</strong></li>
+                <li><a href="./"><strong>Blog</strong></a></li>
             </ul>
         </nav>
 
@@ -34,7 +34,7 @@
         <nav>
             <ol>
                 <li>
-                    <a href="./2021-08-03.html">
+                    <a href="./2021-08-07.html">
                         <time datetime="2021-08-03">
                             3
                             <sup>
@@ -89,7 +89,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./2021-09-19.html">
+                    <a href="2021-09-19.html">
                         <time datetime="2021-09-19">
                             19
                             <sup>
@@ -100,7 +100,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./2021-09-25.html">
+                    <strong>
                         <time datetime="2021-09-25">
                             25
                             <sup>
@@ -108,10 +108,36 @@
                             </sup>
                             of September 2021
                         </time>
-                    </a>
+                    </strong>
                 </li>
             </ol>
         </nav>
+
+
+        <article>
+
+            <header>
+                <h3><time datetime="2021-09-25">25<sup>th</sup> of September 2021</time></h3>
+            </header>
+
+            <h4>Jekyll</h4>
+            <p>
+               In writing my previous blog post I became bothered at how long it took me to update all the links in the nav. Not only did I have to write the blog post and 
+               update the navigation on that page, I also had to update the navigation on all other blog posts (6+ posts). To combat this I created a seperate branch from
+               the main branch in git. This is the "jekyll-template" branch where jekyll was set up and used. Jekyll is a static templating package that allows the user 
+               to recreate a static page from a template that can be repeated multiple times.  This is great for my blog posting as the template will include the navigation and
+               all other information that is the same across all the blog posts (such as the useful links section). This means I only have to update the single navigation
+               page when writing a new blog post and there is much less copy and pasting occuring. In the coming days I will merge the main and jekyll-template branches together.
+               For anyone interested in how I got jekyll established on my personal blog they can read the README.md file in this repository.
+            </p>   
+
+            <h4>Git</h4>
+            <p>
+                I improved on my skills using git this week as I managed to create a new branch using git and then add this to my online github repository as well. 
+                I've learnt how to check the different branches that currently exist using the <pre><code>git branch</code></pre> command. I learnt how to switch between these when required as well. These are only minor skills to learn but essential to my development. My favourite trick I learnt in the last week is that I can open anything I'm developing in VScode by opening the branch in git and using the command <pre><code>code .</code></pre> This will open VScode and all the files in the branch. 
+            </p>
+
+        </article>
 
         <aside>
 
@@ -129,11 +155,10 @@
 
     </main>
 
-
+ 
     <footer>
         <p>Developed by Stanley Mair. Contact me at stanleygmair@gmail.com</p>
     </footer>
-
 </body>
 
 </html>
