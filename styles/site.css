@@ -1,0 +1,26 @@
+@import url(_header.css);
+@import url(_cryptotable.css);
+
+img {
+    height: 20em;
+}
+
+
+
+
+
+/* 
+4,3,2,1
+1 = general selector
+2 = element selector
+3 = class selector
+4 = id selector
+
+General selector = "*" 
+
+Element selector  
+Multiple element selectors 
+Child selector 
+Descendant selector 
+Class selector 
+*/
