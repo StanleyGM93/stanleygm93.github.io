@@ -1,175 +1,42 @@
-<!DOCTYPE html>
-<html lang="en-NZ">
+---
+layout: blogdefault
+title: Stan's Blog
+heading: Progress Blog
+---
 
-<head>
-    <title>Stan's blog</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../styles.css" rel="stylesheet">
-</head>
+<article>
 
-<body>
+  <header>
+    <h3><time datetime="2021-09-25">25<sup>th</sup> of September 2021</time></h3>
+  </header>
 
-    <header>
-        <h1>Progress Blog</h1>
-    </header>
+  <h4>Jekyll</h4>
+  <p>
+    In writing my previous blog post I became bothered at how long it took me to update all the links in the nav. Not
+    only did I have to write the blog post and
+    update the navigation on that page, I also had to update the navigation on all other blog posts (6+ posts). To
+    combat this I created a seperate branch from
+    the main branch in git. This is the "jekyll-template" branch where jekyll was set up and used. Jekyll is a static
+    templating package that allows the user
+    to recreate a static page from a template that can be repeated multiple times. This is great for my blog posting as
+    the template will include the navigation and
+    all other information that is the same across all the blog posts (such as the useful links section). This means I
+    only have to update the single navigation
+    page when writing a new blog post and there is much less copy and pasting occuring. In the coming days I will merge
+    the main and jekyll-template branches together.
+    For anyone interested in how I got jekyll established on my personal blog they can read the README.md file in this
+    repository.
+  </p>
 
-    <main>
+  <h4>Git</h4>
+  <p>
+    I improved on my skills using git this week as I managed to create a new branch using git and then add this to my
+    online github repository as well.
+    I've learnt how to check the different branches that currently exist using the
+  <pre><code>git branch</code></pre> command. I learnt how to switch between these when required as well. These are only
+  minor skills to learn but essential to my development. My favourite trick I learnt in the last week is that I can open
+  anything I'm developing in VScode by opening the branch in git and using the command
+  <pre><code>code .</code></pre> This will open VScode and all the files in the branch.
+  </p>
 
-        <header>
-            <p>Please feel free to navigate through my website below.</p>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="../">Home page</a></li>
-                <li><a href="../achievements.html">My biggest achievements</a></li>
-                <li><a href="../crypto_table.html">Cryptocurrency table</a></li>
-                <li><a href="../charity_plug.html">Charity plug</a></li>
-                <li><a href="./"><strong>Blog</strong></a></li>
-            </ul>
-        </nav>
-
-        <h3>Links to my blog posts</h3>
-        <nav>
-            <ol>
-                <li>
-                    <a href="./2021-08-07.html">
-                        <time datetime="2021-08-03">
-                            3
-                            <sup>
-                                rd
-                            </sup>
-                            of August 2021
-                        </time>
-                    </a>
-                </li>
-                <li>
-                    <a href="./2021-08-07.html">
-                        <time datetime="2021-08-07">
-                            7
-                            <sup>
-                                th
-                            </sup>
-                            of August 2021
-                        </time>
-                    </a>
-                </li>
-                <li>
-                    <a href="./2021-08-13.html">
-                        <time datetime="2021-08-13">
-                            13
-                            <sup>
-                                th
-                            </sup>
-                            of August 2021
-                        </time>
-                    </a>
-                </li>
-                <li>
-                    <a href="./2021-08-26.html">
-                        <time datetime="2021-08-26">
-                            26
-                            <sup>
-                                th
-                            </sup>
-                            of August 2021
-                        </time>
-                    </a>
-                </li>
-                <li>
-                    <a href="./2021-09-03.html">
-                        <time datetime="2021-09-03">
-                            3
-                            <sup>
-                                rd
-                            </sup>
-                            of September 2021
-                        </time>
-                    </a>
-                </li>
-                <li>
-                    <a href="2021-09-19.html">
-                        <time datetime="2021-09-19">
-                            19
-                            <sup>
-                                th
-                            </sup>
-                            of September 2021
-                        </time>
-                    </a>
-                </li>
-                <li>
-                    <strong>
-                        <time datetime="2021-09-25">
-                            25
-                            <sup>
-                                th
-                            </sup>
-                            of September 2021
-                        </time>
-                    </strong>
-                </li>
-                <li>
-                    <a href="2021-10-10.html">
-                        <time datetime="2021-10-10">
-                            10
-                            <sup>
-                                th
-                            </sup>
-                            of October 2021
-                        </time>
-                    </a>
-                </li>
-            </ol>
-        </nav>
-
-
-        <article>
-
-            <header>
-                <h3><time datetime="2021-09-25">25<sup>th</sup> of September 2021</time></h3>
-            </header>
-
-            <h4>Jekyll</h4>
-            <p>
-               In writing my previous blog post I became bothered at how long it took me to update all the links in the nav. Not only did I have to write the blog post and 
-               update the navigation on that page, I also had to update the navigation on all other blog posts (6+ posts). To combat this I created a seperate branch from
-               the main branch in git. This is the "jekyll-template" branch where jekyll was set up and used. Jekyll is a static templating package that allows the user 
-               to recreate a static page from a template that can be repeated multiple times.  This is great for my blog posting as the template will include the navigation and
-               all other information that is the same across all the blog posts (such as the useful links section). This means I only have to update the single navigation
-               page when writing a new blog post and there is much less copy and pasting occuring. In the coming days I will merge the main and jekyll-template branches together.
-               For anyone interested in how I got jekyll established on my personal blog they can read the README.md file in this repository.
-            </p>   
-
-            <h4>Git</h4>
-            <p>
-                I improved on my skills using git this week as I managed to create a new branch using git and then add this to my online github repository as well. 
-                I've learnt how to check the different branches that currently exist using the <pre><code>git branch</code></pre> command. I learnt how to switch between these when required as well. These are only minor skills to learn but essential to my development. My favourite trick I learnt in the last week is that I can open anything I'm developing in VScode by opening the branch in git and using the command <pre><code>code .</code></pre> This will open VScode and all the files in the branch. 
-            </p>
-
-        </article>
-
-        <aside>
-
-            <header>
-                <h3>Useful Links</h3>
-            </header>
-            <ul>
-                <li><a href="http://html5doctor.com/">HTML5 Doctor</a></li>
-                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/">Morzilla develop network</a></li>
-                <li><a href="https://validator.w3.org/">W3 Validator</a></li>
-                <li><a href="https://www.a11yproject.com/">A11Y Project</a></li>
-            </ul>
-        </aside>
-
-    </main>
-
- 
-    <footer>
-        <p>Developed by Stanley Mair. Contact me at stanleygmair@gmail.com</p>
-    </footer>
-</body>
-
-</html>
+</article>
