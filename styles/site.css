@@ -1,7 +1,6 @@
-@import url(_header.css);
-@import url(_cryptotable.css);
-@import url(_bbbsimg.css);
-
+@import url(/styles/_header.css);
+@import url(/styles/_cryptotable.css);
+@import url(/styles/_bbbsimg.css);
 
 
 
