@@ -10,6 +10,8 @@
 body {
   max-width: 960px;
   margin: auto;
+  margin-block-start: 0;
+  padding-block-start: 0;
 }
 
 .visuallyhidden {
