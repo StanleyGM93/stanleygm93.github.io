@@ -1,0 +1,29 @@
+ label {
+   font-size: 2em;
+   color: white;
+   background-color: navy;
+   width: 20%;
+   display: block;
+   margin: auto;
+   text-align: center;
+   border: 1px solid white;
+   border-radius: 5px;
+ }
+
+ label:hover {
+  font-weight: 700;
+ }
+
+ input[type="checkbox"]:checked ~ nav {
+  display: block;
+ }
+
+ input[type="checkbox"]:not(:checked) ~ nav {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+ }

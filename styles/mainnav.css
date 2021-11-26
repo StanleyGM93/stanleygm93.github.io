@@ -2,12 +2,13 @@ nav > ul {
   list-style-type: none;
   padding-inline-start: 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
   height: 60px;
+  overflow: scroll;
 
   background-color: pink;
 }
