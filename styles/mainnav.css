@@ -2,19 +2,17 @@ nav > ul {
   list-style-type: none;
   padding-inline-start: 0;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 60px;
-  overflow: scroll;
+  min-height: fit-content;
 
   background-color: pink;
 }
 
 nav > ul > li > a {
-  font-size: 22px;
   color: navy;
   padding: 10px 10px 10px 10px;
   border: 1px solid navy;
