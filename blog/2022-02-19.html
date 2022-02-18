@@ -1,0 +1,34 @@
+---
+layout: blogdefault
+title: Stan's Blog
+heading: Progress Blog
+---
+
+<article>
+
+  <header>
+    <h3><time datetime="2022-02-19">19<sup>th</sup> of February 2022</time></h3>
+  </header>
+
+  <h4>Responsive Web Design</h4>
+  <p>
+   Web pages in the current era should all be responsive. With so many varying screen sizes it is important that a web page can be scaled to show the content in a clear and precise manor on any device. Key factors in enabling this is often to use units that scale, such as <pre><code>em</code></pre> or <pre><code>rem</code></pre>. Em's scale based on the default <pre><code>font-size</code></pre>of the element being used as the CSS selector. This can be changed in CSS by changing the <pre><code>font-size</code></pre> of the element. Rem's base the <pre><code>font-size</code></pre> property based on the root element, in most cases this will be the <pre><code>html</code></pre> element. The default <pre><code>font-size</code></pre> of the root element is commonly 16px, meaning that 2rem is 32px. Using these types of units allows the text size to change with varying web page dimensions. 
+  </p>
+  <p>
+    Using <pre><code>min-width</code></pre> and <pre><code>max-width</code></pre> is often better than using the <pre><code>width</code></pre> property as it sets a hard limit on the elements. This means that when the web page is resized the elemets can resize with it. Setting a minimum or maximum for the height or width means that content doesn't become illegible or distort the design of the web page as it expands and shrinks. 
+  </p>
+  <p>
+    Media queries are an important CSS declaration for responsive web design. They allow us to alter the way a page is structured based on certain properties (such as the screen size). This allows us to build the web page for small mobile screens, through to tablet sized screens and all the way up to computer screen sizes and even televisions. We can also differentiate between potrait or landscape viewing options, light or dark themes and many other traits that may be required. Having a full understanding of media queries is essential and it is something I will look deeper into so that I can use them to their full potential.
+  </p>
+
+  <h4>Variables</h4>
+  <p>
+    In CSS you can declare variables in the following manner <pre><code>--background-color: color</code></pre> which is tremendously useful. This allows us to build the web page(s) and if the client or your boss wants a certain aspect changed that you can simply change the variable instead of having to go through pages of code tryijng to find every instance that needs to be changed. The extent to which you use variables will obviously depend on the scale and complexity of the design. If the website is going to be large and complex then it is likely worthwhile to use SASS due to its extra functionality and the ability to use mixins and reduce the amount of declarations when writing the stylesheets. Having variables in CSS is great as I'll be able to make small changes quite efficiently to my own sites if I write common colors and font-sizes as variables. 
+  </p>
+
+  <h4>Next Steps</h4>
+  <p>
+    I'll be learning about functions in CSS and hopefully get closer to understanding a reasonable amount about intermediate level CSS. Fromt here I'll try to cement my knowledge through examples in codepen and other builds. I also want to dive a little deeper into media queries to try and understand them more. An example I read used <pre><code>@media only screen and ...</code></pre> and it seemed unnecesary to me for the example. Understanding the declaration will put me in a good place for the future. 
+  </p>
+
+</article>
