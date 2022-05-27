@@ -13,14 +13,10 @@ nav > ul {
 }
 
 nav > ul > li > a {
-  color: navy;
+
   padding: 10px 10px 10px 10px;
   border: 1px solid navy;
   border-radius: 5px;
   text-decoration: none;
 }
 
-nav > ul > li > a:hover {
-  color: azure;
-  background-color: navy;
-}

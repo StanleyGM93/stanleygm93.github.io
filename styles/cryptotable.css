@@ -1,14 +1,11 @@
 table,
- 
-th, 
-
-td{
+th,
+td {
     border:solid;
     width: 50%;
     text-align: center;
     border-collapse: collapse;
 }
-
 
 th, 
 td {
