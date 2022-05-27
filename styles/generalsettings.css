@@ -1,6 +1,7 @@
 * {
   margin: 0;
   border: 0;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 * + * {
@@ -8,6 +9,7 @@
 }
 
 body {
+
   max-width: 960px;
   margin: auto;
   margin-block-start: 0;
