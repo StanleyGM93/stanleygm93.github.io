@@ -8,14 +8,12 @@ nav > ul {
   align-items: center;
   align-content: center;
   min-height: fit-content;
-
-  background-color: pink;
 }
 
 nav > ul > li > a {
 
   padding: 10px 10px 10px 10px;
-  border: 1px solid navy;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   text-decoration: none;
 }
