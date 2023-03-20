@@ -13,8 +13,10 @@ nav > ul {
 nav > ul > li > a {
 
   padding: 10px 10px 10px 10px;
-  border: 1px solid var(--border-color);
+  border-width: 2px;
+  border-style: solid;
   border-radius: 5px;
+  border-image: var(--dark-theme-border-gradient);
   text-decoration: none;
 }
 
