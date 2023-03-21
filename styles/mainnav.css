@@ -11,12 +11,15 @@ nav > ul {
 }
 
 nav > ul > li > a {
-
   padding: 10px 10px 10px 10px;
   border-width: 2px;
   border-style: solid;
-  border-radius: 5px;
-  border-image: var(--dark-theme-border-gradient);
+  border-image-slice: 1;
+  border-image-source: linear-gradient(45deg, var(--dark-theme-border-primary-color), var(--dark-theme-border-secondary-color));
   text-decoration: none;
 }
 
+nav > ul > li > a:hover {
+  font-weight: bold;
+  color: var(--dark-theme-border-primary-color);
+}
