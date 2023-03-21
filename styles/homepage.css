@@ -1,0 +1,13 @@
+dl {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-images img{
+  max-width: 100px;
+  aspect-ratio: 1;
+}
+
+.light-background img {
+  background-color: azure;
+}
