@@ -10,7 +10,7 @@
   border: 0;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--font-color);
-  line-height: 1.5;
+  line-height: 2;
 }
 
 * + * {
@@ -34,4 +34,8 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+h3 {
+  color: var(--dark-theme-border-primary-color);
 }
