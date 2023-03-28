@@ -2,15 +2,15 @@
 layout: blogpost
 title: Stan's Blog
 heading: Progress Blog
+topic: Overcoming merge issues
 ---
 
 <article>
 
   <header>
-    <h3><time datetime="2021-10-22">22<sup>nd</sup> of October 2021</time></h3>
+    <h3><time datetime="2021-10-22">22<sup>nd</sup> of October 2021</time> - {{ page.topic }} </h3>
   </header>
 
-  <h4>Overcoming merge issues</h4>
   <p>
     Although in the previous blog post I commented that everything was <q>operational</q>, this was not the case. I failed to realise that my CSS styling folder wasn't being recognised. This meant that none of my styling was apparent on the webpages. After some investigating I worked out that the <code>_site</code> folder that is a duplicate of my files for Jekyll only had the site stylesheet and none of the others. I tried to build this again and again hoping that the build would update the <code>_site</code>_site folder to include my stylesheets. This failed and so I turned to Google. After 30 minutes of searching I couldn't find a solution to my issue. From there I reread the documentation multiple times to try and work out how to solve my issue. After spending hours trying to solve the issue an idea finally came to me. I thought the issue might be that my stylesheets were named with an underscore at the beginning and that was reserved for Jekyll folders only. Once I renamed my stylesheets to remove the underscore all of my issues were resolved. A good lesson here was to check that everything was working properly post-merge. It was a good lesson in debugging and problem solving which is an area I need to improve in.
   </p>
