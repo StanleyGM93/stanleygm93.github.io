@@ -2,6 +2,7 @@
 layout: blogpost
 title: Stan's Blog
 heading: Progress Blog
+topic: Responsive web design
 ---
 
 <article>
@@ -10,7 +11,6 @@ heading: Progress Blog
     <h3><time datetime="2022-02-19">19<sup>th</sup> of February 2022</time> - {{ page.topic }}</h3>
   </header>
 
-  <h4>Responsive Web Design</h4>
   <p>
    Web pages in the current era should all be responsive. With so many varying screen sizes it is important that a web page can be scaled to show the content in a clear and precise manor on any device. Key factors in enabling this is often to use units that scale, such as <pre><code>em</code></pre> or <pre><code>rem</code></pre>. Em's scale based on the default <pre><code>font-size</code></pre>of the element being used as the CSS selector. This can be changed in CSS by changing the <pre><code>font-size</code></pre> of the element. Rem's base the <pre><code>font-size</code></pre> property based on the root element, in most cases this will be the <pre><code>html</code></pre> element. The default <pre><code>font-size</code></pre> of the root element is commonly 16px, meaning that 2rem is 32px. Using these types of units allows the text size to change with varying web page dimensions. 
   </p>
