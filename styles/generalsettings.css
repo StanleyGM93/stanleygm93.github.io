@@ -26,6 +26,31 @@ body {
   background-image: var(--repeated-background-image)
 }
 
+h3 {
+  color: var(--dark-theme-border-primary-color);
+}
+
+
+a {
+  text-decoration-color: var(--dark-theme-border-primary-color);
+  text-decoration-thickness: 2px;
+}
+
+h3 > * {
+  color: var(--dark-theme-border-primary-color);
+}
+
+h3 > * > * {
+color: var(--dark-theme-border-primary-color);
+}
+
+
+
+
+.first-list-item {
+  padding: 5px;
+}
+
 .visuallyhidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -34,8 +59,4 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-}
-
-h3 {
-  color: var(--dark-theme-border-primary-color);
 }
