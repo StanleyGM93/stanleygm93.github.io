@@ -6,14 +6,16 @@ heading: Stan's Home on the Web
 
 <section>
   <header>
-    <h3>Cryptocurrency Table</h3>
+    <h3>Cryptocurrency tables</h3>
   </header>
   <table>
-    <caption>The Top 5 Cryptocurrencies at Present (excluding stable coins)</caption>
+    <caption>
+      The Top 5 Cryptocurrencies as at 17 October 2021 (excluding stable coins)
+    </caption>
     <thead>
       <tr>
-        <th scope="col">Coin</th>
-        <th scope="col">Short Name</th>
+        <th scope="col">Coin rank</th>
+        <th scope="col">Symbol</th>
         <th scope="col">Price ($NZD)</th>
       </tr>
     </thead>
@@ -45,4 +47,35 @@ heading: Stan's Home on the Web
       </tr>
     </tbody>
   </table>
+
+  <h3>Dynamically generated list of top 10 Cryptocurrencies currently</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Coin rank</th>
+        <th scope="col">Symbol</th>
+        <th scope="col">Price ($USD)</th>
+      </tr>
+    </thead>
+    <tbody id="coin-token-info"></tbody>
+  </table>
 </section>
+
+<script>
+  fetch("https://api.coinpaprika.com/v1/tickers")
+    .then((response) => response.json())
+    .then((coins) => {
+      for (let i = 0; i < 10; i++) {
+        const coin = coins[i];
+        const coinRow = `
+            <tr>
+                <td>${coin.rank}</td>
+                <td>${coin.name}</td>
+                <td>${Math.round(coin.quotes.USD.price * 100) / 100}</td>
+            </tr>`;
+
+        document.getElementById("coin-token-info").innerHTML += coinRow;
+      }
+    });
+</script>
