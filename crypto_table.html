@@ -14,7 +14,7 @@ heading: Stan's Home on the Web
     </caption>
     <thead>
       <tr>
-        <th scope="col">Coin rank</th>
+        <th scope="col">Coin</th>
         <th scope="col">Symbol</th>
         <th scope="col">Price ($NZD)</th>
       </tr>
@@ -48,12 +48,14 @@ heading: Stan's Home on the Web
     </tbody>
   </table>
 
-  <h3>Dynamically generated list of top 10 Cryptocurrencies currently</h3>
-
   <table>
+    <caption>
+      Dynamically generated list of top 10 Cryptocurrencies currently
+    </caption>
+
     <thead>
       <tr>
-        <th scope="col">Coin rank</th>
+        <th scope="col">Coin</th>
         <th scope="col">Symbol</th>
         <th scope="col">Price ($USD)</th>
       </tr>
@@ -70,8 +72,8 @@ heading: Stan's Home on the Web
         const coin = coins[i];
         const coinRow = `
             <tr>
-                <td>${coin.rank}</td>
                 <td>${coin.name}</td>
+                <td>${coin.symbol}</td>
                 <td>${Math.round(coin.quotes.USD.price * 100) / 100}</td>
             </tr>`;
 

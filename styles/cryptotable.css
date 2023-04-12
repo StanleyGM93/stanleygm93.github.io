@@ -1,13 +1,29 @@
+table {
+  width: 75%;
+  table-layout: fixed;
+  margin-inline: auto;
+}
+
 table,
 th,
 td {
-    border:solid;
-    width: 50%;
     text-align: center;
+    border: solid;
+    border-color: var(--font-color);
     border-collapse: collapse;
 }
 
 th, 
 td {
-    padding: 15px;
+  padding: 15px;
+}
+
+thead > tr > th {
+  color: var(--dark-theme-border-primary-color);
+  
+}
+
+caption {
+  padding-block: 0.75rem;
+  font-weight: bold;
 }

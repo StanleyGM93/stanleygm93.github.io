@@ -1,51 +1,34 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
+  <head>
+    <title>Stan's blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/styles/site.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Stan's blog</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/styles/site.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <header>
-    <h1>Progress Blog</h1>
-  </header>
-
-  <main>
-
+  <body>
     <header>
-      <p class="visuallyhidden">Please feel free to navigate through my website below.</p>
+      <h1>Progress Blog</h1>
     </header>
 
-    {% include mainnav.html %}
-
-    {% include blognav.html %}
-
-    {{ content }}
-
-    <aside>
-
+    <main>
       <header>
-        <h3>Useful Links</h3>
+        <p class="visuallyhidden">
+          Please feel free to navigate through my website below.
+        </p>
       </header>
-      <ul>
-        <li><a href="http://html5doctor.com/">HTML5 Doctor</a></li>
-        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/">Morzilla develop network</a></li>
-        <li><a href="https://validator.w3.org/">W3 Validator</a></li>
-        <li><a href="https://www.a11yproject.com/">A11Y Project</a></li>
-      </ul>
-    </aside>
 
-  </main>
+      {% include mainnav.html %} {% include blognav.html %} {{ content }}
+    </main>
 
-
-  <footer>
-    <p>Developed by Stanley Mair. Contact me at <a href="mailto:stanleygmair@gmail.com?subject=Website contact">stanleygmair@gmail.com</a></p>
-  </footer>
-</body>
-
+    <footer>
+      <p>
+        Developed by Stanley Mair. Contact me at
+        <a href="mailto:stanleygmair@gmail.com?subject=Website contact"
+          >stanleygmair@gmail.com</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
