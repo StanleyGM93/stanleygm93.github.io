@@ -56,14 +56,19 @@ topic: Javascript and the DOM
     <code>Object.keys(exampleObject)</code>. A similar function exists for
     finding the values of an object: <code>Object.values(exampleObject)</code>.
     Below is an example of an object:
-    <code
-      >const person = { name: "John Doe", age: 30, profession: "Software
-      Developer", hobbies: ["reading", "playing guitar", "running"], address: {
-      street: "123 Main St", city: "Exampleville", country: "Exampleland" },
-      sayHello: function() { console.log("Hello! My name is " + this.name +
-      "."); } };</code
-    >
+  </p>
+  <!-- prettier-ignore -->
+  <pre>
+    const person = { 
+      name: "John Doe", 
+      age: 30,
+      profession: "Software Developer", 
+      hobbies: ["reading", "playing guitar", "running"], 
+      address: { street: "123 Main St", city: "Exampleville", country: "Exampleland" },
+    };
+  </pre>
 
+  <p>
     To access the name of the person you could write either
     <code>person.name</code> or <code>person[name]</code>, both would return
     "John Doe".
