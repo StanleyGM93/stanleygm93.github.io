@@ -1,0 +1,81 @@
+---
+layout: blogpost
+title: Stan's Blog
+heading: Progress Blog
+topic: Javascript and the DOM
+---
+
+<article>
+  <header>
+    <h3>
+      <time datetime="2023-06-21">21<sup>st</sup> of June 2023 </time>
+      - {{ page.topic }}
+    </h3>
+  </header>
+
+  <p>
+    JavaScript is a programming language, unlike HTML and CSS. The difference is
+    that a programming language adds interactiveity to websites. It allows you
+    to change styles, add text, alter images and play games to name a few. HTML
+    provides the content and structure of a website, CSS the decoration and
+    JavaScript the interaction.
+  </p>
+
+  <p>
+    Programming languages (such as JavaScript) include many of the same features
+    across them. Some common features include control flow and loops. Control
+    flow is a common concept, it uses <code>if</code> and
+    <code>else</code> statements. An easy example is a light switch, if the
+    switch is down the light turns on, if it's up then the light is off. This
+    idea is used in JavaScript as you can write code that will only run in
+    certain situations. Loops seem like an easy idea but take a while to get
+    your head around. There are a few different ways to set up a loop but
+    basically a loop will execute a piece of code repeatedly. It will either run
+    until a condition is met or however many times you tell it to run. Loops are
+    great, it gives you the power to run through large lists (arrays or sets as
+    examples) quickly without having to copy and paste the same piece of code
+    multiple times. Being able to execute a piece of code hundreds or thousands
+    of time saves an enormous amount of time for the programmer.
+  </p>
+  <p>
+    The document object model (DOM) is a model of the objects that make up the
+    document. Every element and attribute make up nodes that can be accessed
+    using JavaScript. This allows for the website to become interactive as we
+    can use JavaScript to change these nodes to add content, remove content,
+    change styles or any other interaction a programmer can think of.
+  </p>
+
+  <p>
+    Arrays are a list of different data points which can be accessed using an
+    index in square brackets such as: <code>Array[0]</code>. JavaScript starts
+    counting arrays at index 0. This means that <code>Array[0]</code> will
+    return the first point in the array. Objects can be accessed by using keys.
+    All objects have keys and values, these can vary considerably but there are
+    standard ways to access information in objects. To obtain the keys of the
+    object you are able to use the function
+    <code>Object.keys(exampleObject)</code>. A similar function exists for
+    finding the values of an object: <code>Object.values(exampleObject)</code>.
+    Below is an example of an object:
+    <code
+      >const person = { name: "John Doe", age: 30, profession: "Software
+      Developer", hobbies: ["reading", "playing guitar", "running"], address: {
+      street: "123 Main St", city: "Exampleville", country: "Exampleland" },
+      sayHello: function() { console.log("Hello! My name is " + this.name +
+      "."); } };</code
+    >
+
+    To access the name of the person you could write either
+    <code>person.name</code> or <code>person[name]</code>, both would return
+    "John Doe".
+  </p>
+
+  <p>
+    Functions are a chunk of code that usually perform a specific task. The more
+    specific a function is the easier a large amount of code is to understand.
+    Functions store a set of instructions that will be executed when called
+    upon. These sets of instructions can be as simple as changing some text to
+    changing the full layout of the page. Being able to store these sets of
+    instructions is great as they are only used when required but can be called
+    upon as many times as required.
+  </p>
+</article>
