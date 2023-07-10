@@ -21,6 +21,7 @@ topic: Javascript and the DOM
     JavaScript the interaction.
   </p>
 
+  <h4>Control flow and loops</h4>
   <p>
     Programming languages (such as JavaScript) include many of the same features
     across them. Some common features include control flow and loops. Control
@@ -37,6 +38,8 @@ topic: Javascript and the DOM
     multiple times. Being able to execute a piece of code hundreds or thousands
     of time saves an enormous amount of time for the programmer.
   </p>
+
+  <h4>The DOM</h4>
   <p>
     The document object model (DOM) is a model of the objects that make up the
     document. Every element and attribute make up nodes that can be accessed
@@ -45,17 +48,30 @@ topic: Javascript and the DOM
     change styles or any other interaction a programmer can think of.
   </p>
 
+  <h4>Accessing arrays</h4>
   <p>
-    Arrays are a list of different data points which can be accessed using an
-    index in square brackets such as: <code>Array[0]</code>. JavaScript starts
-    counting arrays at index 0. This means that <code>Array[0]</code> will
-    return the first point in the array. Objects can be accessed by using keys.
-    All objects have keys and values, these can vary considerably but there are
-    standard ways to access information in objects. To obtain the keys of the
-    object you are able to use the function
-    <code>Object.keys(exampleObject)</code>. A similar function exists for
-    finding the values of an object: <code>Object.values(exampleObject)</code>.
-    Below is an example of an object:
+    Arrays are a list of different data entries. An array can look like the
+    following:
+  </p>
+  <code>let newArray = ["Hello", "there", 0, 1, true, false]</code>
+
+  <p>
+    As shown, arrays can store multiple different types of data. You can access
+    a specific data point in an array using its index.This is done using an
+    index in square brackets such as: <code>newArray[0]</code> which would
+    return <code>"Hello"</code>. JavaScript starts counting arrays at index 0.
+    This means that <code>Array[0]</code> will return the first entry in the
+    array.
+  </p>
+
+  <h4>Accessing objects</h4>
+  <p>
+    Objects can be accessed by using keys. All objects have keys and values,
+    these can vary considerably but there are standard ways to access
+    information in objects. To obtain the keys of the object you are able to use
+    the function <code>Object.keys(exampleObject)</code>. A similar function
+    exists for finding the values of an object:
+    <code>Object.values(exampleObject)</code>. Below is an example of an object:
   </p>
   <!-- prettier-ignore -->
   <pre>
@@ -74,6 +90,7 @@ topic: Javascript and the DOM
     "John Doe".
   </p>
 
+  <h4>Functions</h4>
   <p>
     Functions are a chunk of code that usually perform a specific task. The more
     specific a function is the easier a large amount of code is to understand.
