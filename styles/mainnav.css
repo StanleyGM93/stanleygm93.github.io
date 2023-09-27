@@ -29,12 +29,9 @@ nav > ul > li > a:hover {
 }
 
 .toggle-button {
-  display: none;
-}
-
-.bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
+  display: block;
+  width: 30px;
+  height: 21px;
+  margin: auto;
+  border: none;
 }
