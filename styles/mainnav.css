@@ -30,11 +30,27 @@ nav > ul > li > a:hover {
 
 .toggle-button {
   display: none;
+  width: 30px;
+  height: 21px;
+  margin: auto;
+  border: none;
 }
 
-.bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
+@media (max-width: 800px) {
+  .toggle-button {
+    display: block;
+  }
+
+  .main-nav-item {
+    display: none;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-nav-item.active {
+    display: flex;
+  }
 }

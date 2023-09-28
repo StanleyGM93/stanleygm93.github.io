@@ -1,16 +1,39 @@
 <nav>
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/achievements.html">Achievements</a></li>
-    <li><a href="/crypto_table.html">Cryptocurrency table</a></li>
-    <li><a href="/charity_plug.html">Charity plug</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <li class="toggle-button">
-      <a href="#">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <li>
+      <a href="#" class="toggle-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
       </a>
     </li>
+    <li><a href="/" class="main-nav-item">Home</a></li>
+    <li><a href="/achievements.html" class="main-nav-item">Achievements</a></li>
+    <li>
+      <a href="/crypto_table.html" class="main-nav-item"
+        >Cryptocurrency table</a
+      >
+    </li>
+    <li><a href="/charity_plug.html" class="main-nav-item">Charity plug</a></li>
+    <li><a href="/blog/" class="main-nav-item">Blog</a></li>
   </ul>
 </nav>
+<script>
+  const toggleButton = document.getElementsByClassName("toggle-button")[0];
+  const navbarLinks = document.getElementsByClassName("main-nav-item");
+
+  toggleButton.addEventListener("click", () => {
+    Array.from(navbarLinks).forEach((link) => link.classList.toggle("active"));
+  });
+</script>
