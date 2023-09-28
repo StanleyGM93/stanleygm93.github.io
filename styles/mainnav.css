@@ -44,4 +44,13 @@ nav > ul > li > a:hover {
   .main-nav-item {
     display: none;
   }
+
+  nav > ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-nav-item.active {
+    display: flex;
+  }
 }
